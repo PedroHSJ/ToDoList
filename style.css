@@ -63,7 +63,7 @@ header h1{
 
     min-height: 300px;
     height: max-content;
-    max-width: 270px;
+    min-width: auto;
 
     padding: 10px;
     margin: 50px 50px auto 50px;
@@ -141,6 +141,15 @@ input[type='button']{
 
     min-width: 170px;
 }
+
+.riscado{
+    text-decoration: line-through;
+}
+
+.bordaverde{
+    border: 2px solid #0f0;
+}
+
 
 /* DIV CHECKBOX */
 /* Customize the label (the container) */

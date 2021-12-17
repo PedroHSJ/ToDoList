@@ -1,20 +1,24 @@
 const conteudo = document.getElementById('conteudo')
 
 
-function insert(){
+function insert() {
     let entry = document.getElementById('entry');
-    
-    if (entry.value.length != 0){
+
+    if (entry.value.length != 0) {
 
         display(entry);
     } else alert('Insira uma tarefa!!!')
 }
 
-function display(entry){
+function display(entry) {
     const div = document.createElement('div');
-    
+
     const label = document.createElement('label');
     label.classList.add('container');
+    label.addEventListener('change', () => {
+        h4.classList.toggle('riscado');
+        div.classList.toggle('bordaverde')
+    })
 
     const input = document.createElement('input');
     input.type = 'checkbox';
@@ -33,12 +37,14 @@ function display(entry){
 
     conteudo.appendChild(div)
 
- 
+
 
 }
 
-document.addEventListener('keypress', function(e){
-    if(e.which === 13){
+document.addEventListener('keypress', function (e) {
+    if (e.which === 13) {
         insert()
     }
 })
+
+
