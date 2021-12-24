@@ -99,14 +99,17 @@ header h1{
     height: 62px;
 
     border: none;
-    border-radius: 0 5px 5px 0;
 
     background-color: #000;
     color: #fff;
 
     font-size: 30px;
 
-   
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #conteudo div{
