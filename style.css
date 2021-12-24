@@ -74,7 +74,13 @@ header h1{
 
     
 }
+#control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+    margin-top: 10px;
+}
 #entry{
     height: 40px;
     width: 150px;
@@ -88,24 +94,19 @@ header h1{
 
     margin-bottom: 5px;
 }
-
-input[type='button']{
-    width: 60px;
+#btn{
+    width: 50px;
     height: 62px;
+
+    border: none;
+    border-radius: 0 5px 5px 0;
+
+    background-color: #000;
+    color: #fff;
 
     font-size: 30px;
 
-    border-radius: 0;
-    border: none;
-
-    position: relative;
-    left: -4px;
-    top: 3px;
-
-    background-color: #000;
-    color: var(--text-light);
-
-    text-align: center;
+   
 }
 
 #conteudo div{
@@ -280,7 +281,14 @@ footer{
 
 
 @media (min-width:1024px){
+#btn{
+    height: 38px;
 
+} 
+#control{
+    display: flex;
+    flex-direction: row;
+}
 #conteudo{
     background-color: var(--bg-light);
 
@@ -318,20 +326,7 @@ footer{
     border: 1px solid #fff;
 }
 
-input[type='button']{
-    width: 36px;
-    height: 38px;
 
-    border-radius: 0 10px 10px 0;
-    border: none;
-
-    position: relative;
-    left: -4px;
-    top: 3px;
-
-    background-color: #000;
-    color: var(--text-light);
-}
 
 input[type='button']:hover{
     cursor: pointer;
